@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="background">
+
+  <div class="nav">
+	<a class="a active" href="#">HOME</a>
+	<a class="b" href="#">EDUCATION</a>
+	<a class="c" href="#">MAJOR PROJECT</a>
+        <a class="d" href="#">IT PROFICIENCY</a>
+	<a class="e" href="#">ACHEIVEMENTS</a>
+	<a class="f" href="#">DECLARATION</a> 		
+        </div>
+  <div class="content">
+	<div class="home">
+		<h1>SUKANYA A</h1>
+		<h3>MAIL-ID:sukanyasuryaprakash3@gmail.com</h3>
+		<br>
+		<br><br><br><br><br><br><br>
+		<p><b style="font-size:33px;"><br><br>Objective:</b><br><br>
+			To work in a firm with a proffessional work driven environment where i can utilize and apply my knoewledge,skill whuch would be enable me as a fresh graduate
+			to grow while fulfilling organizational goals .
+		</p>
+	</div>
+	<div class="edu">
+		<p><b> >>  Diploma in Computer engineering from GPTC chelakkara(2014-2017).<br>
+		       >>Higher Secondary Education from vmc ghss peringottukurissi(2014).<br>
+		       >> Secondary Education from st.thomas hss,mayannor(2012).</b>
+		</p>
+	</div>
+	<div class="project">
+		<p><b> <br><br>
+	*  MGTP Helper Duration   : 6 Months Front-end used 
+				  : Android Back-end used 
+				  :  SQLite  
+ 	*  Hotel Management System Duration   : 3 Months Front-end used 
+					      : Android + php Back-end used 
+					      : Windows Apache Mysql php </b></p>
+	</div>
+	<div class="skill">
+		<p><b>  * Operating System       : Windows7/10  Linux(Ubuntu)<br> 
+			* Language                    : C, Core Java, Android<br> 
+			* Back-end Systems      : Oracle SQL Server , SQLite    <br>                                          Web Technologies     : HTML, PHP, JavaScript 
+
+		</b></p>
+	</div>
+	<div class="ach">
+		<p><b>
+		>> spoken tutorial (IIT BOMBAY)</b></p>
+	</div>
+	<div class="ref">
+	<p><b>
+	I here by declare that the above mentioned details are true to the best of my knowledge.<br>
+											SUKANYA A<br>
+
+	</b></p>
+	</div>
+	
+  </div>
+     
+</div>
+ 
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	$('a').click(function(){
+	//alert("iam click");
+	var selected = $(this);
+	$('a').removeClass('active');
+	$(selected).addClass('active');
+	});
+	var $a = $('.a'),
+	$b = $('.b'),
+        $c = $('.c'),
+        $d = $('.d'),
+	$e = $('.e'),
+	$f = $('.f'),
+        $home = $('.home'),
+        $edu = $('.edu'),
+	$project = $('.project'),
+        $skill = $('.skill'),
+	$ach = $('.ach'),
+	$ref = $('.ref');
+	$a.click(function(){
+		$home.fadeIn();
+		$edu.fadeOut();
+		$project.fadeOut();
+		$skill.fadeOut();
+		$ach.fadeOut();	
+		$ref.fadeOut();
+		});
+	$b.click(function(){
+		$edu.fadeIn();
+		$home.fadeOut();
+		$project.fadeOut();
+		$skill.fadeOut();
+		$ach.fadeOut();
+		$ref.fadeOut();
+	});
+	$c.click(function(){
+		$project.fadeIn();
+		$home.fadeOut();
+		$edu.fadeOut();
+		$skill.fadeOut();
+		$ach.fadeOut();	
+		$ref.fadeOut();
+			
+	});
+	$d.click(function(){
+		$skill.fadeIn();
+		$home.fadeOut();
+		$edu.fadeOut();
+		$project.fadeOut();
+		$ach.fadeOut();
+		$ref.fadeOut();
+	});
+	$e.click(function(){
+		$ach.fadeIn();
+		$home.fadeOut();
+		$edu.fadeOut();
+		$project.fadeOut();
+		$skill.fadeOut();
+		$ref.fadeOut();
+	});
+	$f.click(function(){
+		$ref.fadeIn();
+		$home.fadeOut();
+		$edu.fadeOut();
+		$project.fadeOut();
+		$skill.fadeOut();
+		$ach.fadeOut();
+	
+});
+});
+</script>
+
+</body>
+<style>
+
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	font-weight: normal;
+
+}
+.background{
+	width: 100%;
+	height: 100%;
+	background-color:lightblue;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow-y:auto;
+
+}
+.nav{
+	width: 300px;
+	height: auto;
+	
+	position:absolute;
+	top: 0;
+	left: 0;
+}
+.nav a{
+	text-decoration: none;
+	font-size:20px;
+	font-family: verdana;
+	font-weight: bold;
+	height: 80px;
+	margin: 5px 0;
+	float : left;
+	display: inline-block;
+	background-color:black;
+	color: white;
+	line-height: 90px;
+	text-align:center;	
+	transition: 300ms;
+}
+
+a.active, .nav a:hover{
+	background-color: white;
+	color: black;
+	width: 100%;
+	
+}
+.a{
+	width: 95%;
+}
+.b{
+	width: 85%;
+}
+.c{
+	width:85%;
+}
+.d{
+	width: 85%;
+}
+.e{
+	width:85%;
+}
+.f{
+	width: 85%;
+}
+
+.content{
+	position: absolute;
+	width: 930px;
+	min-height: 500px;
+	height: auto;
+	right: 0; 
+	top: 10%;
+}
+.home{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	bottom: -20px;
+	color: white;
+	font-family: verdana;
+
+
+}
+.home h1{
+	font-size: 95px;
+	padding-right: 90px;
+	border-bottom: 1px solid white;
+	text-transform: uppercase;
+}
+.home h3{
+	font-size:21px;
+	padding: 5px 0;
+	opacity: 0.6;
+}
+.home p{
+	font-size: 30px;
+	font-family:times new roman;
+	Line-height: 28px;
+	margin-bottom: 15px;
+}
+.edu{
+	position: absolute;
+	right: 0;
+	top: 20px;
+	color: white;
+	font-family: times new roman;
+	padding: 0 60px;
+	display: none;
+}
+.edu p{
+	font-size: 30px;
+	Line-height: 70px;
+	margin-bottom: 15px;
+
+}
+.project{
+	position: absolute;
+	//right:-50px;
+	top: 20px;
+	color: white;
+	font-family: century gothic;
+	padding: 0 60px;
+	display: none;
+		
+}
+
+.project p{
+	right: 0px;
+	font-size: 50px;
+	Line-height: 70px;
+	margin-bottom: 150px;
+
+}
+.skill{
+	position: absolute;
+	right: 0;
+	top: 20px;
+	color:white;
+	font-family: times new roman;
+	padding: 0 60px;
+	display: none;
+}
+.skill p{
+	font-size: 30px;
+	Line-height: 70px;
+	margin-bottom: 250px;
+}
+.ach{
+	position: absolute;
+	right: 0;
+	top: 20px;
+	color:white;
+	font-family: times new roman;
+	padding: 0 60px;
+	display: none;
+}
+.ach p{
+	font-size: 30px;
+	Line-height: 70px;
+	margin-bottom: 250px;
+}
+.ref{
+	position: absolute;
+	right: 0;
+	top: 0;
+	color:white;
+	font-family: times new roman;
+	padding: 0 60px;
+	display: none;
+}
+.ref p{
+	font-size: 30px;
+	Line-height: 70px;
+	margin-bottom: 250px;
+}
+
+
+</style>
+</html>
+
+
+
+
+
+
+
+
+
+
+
